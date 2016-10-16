@@ -1,0 +1,18 @@
+/**
+ * Created by pheadra on 9/9/16.
+ * Popup Animation
+ */
+.popup-appear {
+  opacity: 0.01;
+}
+.popup-appear.popup-appear-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.popup-leave {
+  opacity: 1;
+}
+.popup-leave.popup-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

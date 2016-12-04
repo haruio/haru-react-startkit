@@ -3,8 +3,8 @@ README
 ## Quick start
 
 1. git clone https://github.com/haruio/haru-react-startkit  
-1. npm install
-1. npm run
+1. npm install or yarn install
+1. npm start or yarn start
 
 ## Script
 

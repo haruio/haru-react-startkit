@@ -21,14 +21,14 @@ module.exports = (options) => ({
   output: options.output,
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
+      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: options.cssLoaders },
-      { test: /\.(svg|woff|woff2|ttf|eot|otf)/, loader: 'file?name=public/fonts/[name].[ext]' },
+      { test: /\.(svg|woff|woff2|ttf|eot|otf)/, loader: 'file-loader' },
       {
         test: /\.(jpg|png|gif)$/,
         loaders: [
           'file-loader',
-          'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+          'image-webpack-loader?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
         ]
       },
       { test: /\.json$/, loader: 'json-loader' }

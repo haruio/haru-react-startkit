@@ -15,7 +15,7 @@ module.exports = require('./webpack.base.js')({
     publicPath: '/',
     filename: '[name].bundle.js'
   },
-  cssLoaders : ExtractTextPlugin.extract({ fallbackLoader: 'style', loader: 'css?sourceMap!postcss' }),
+  cssLoaders : ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap!postcss-loader' }),
   plugins: [
     new webpack.NoErrorsPlugin()
   ],
